@@ -14,6 +14,7 @@ source "$READY_LIB_DIR/check_command.sh"
 
 source "$READY_LIB_DIR/check_node.sh"
 source "$READY_LIB_DIR/check_python.sh"
+source "$READY_LIB_DIR/check_ruby.sh"
 
 # Execute READYRC_FILE
 
