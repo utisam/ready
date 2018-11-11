@@ -11,5 +11,5 @@ fi
 source "$READY_LIB_DIR/ready_lib.sh"
 
 # Execute RC_FILE
-log_debug "Execute $RC_FILE"
-source "$RC_FILE"
+log_debug "Execute: $RC_FILE"
+bash "$RC_FILE"
