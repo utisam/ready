@@ -7,3 +7,5 @@ check_command "make"
 check_command "python3"
 check_pip_command
 check_pip_package "Sphinx"
+check_pip_package "sphinx_rtd_theme"
+check_pip_package "sphinxcontrib-blockdiag"

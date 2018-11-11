@@ -6,3 +6,5 @@
 check_command "echo"
 check_command "command"
 check_command "install"
+check_command "xargs"
+check_command "basename"
