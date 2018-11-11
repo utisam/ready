@@ -2,7 +2,7 @@
 
 check_command() {
     out_title "Command: $1"
-    if type $1 > /dev/null; then
+    if command -v "$1" > /dev/null; then
         out_ok
         return 0
     else

@@ -1,5 +1,8 @@
 #!/bin/bash
 
-check_command "cat"
-check_npm_package "errno"
-check_npm_package "less"
+# This script is for "ready" to check if you are ready for development.
+# Please install https://github.com/utisam/ready
+
+check_command "echo"
+check_command "command"
+check_command "install"
