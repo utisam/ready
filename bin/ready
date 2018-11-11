@@ -1,15 +1,21 @@
-#!/bin/bash
+#!/bin/bash -u
 
-READY_LIB_DIR=${READY_LIB_DIR:-"$(dirname $BASH_SOURCE)/../lib/ready"}
+declare -r READY_LIB_DIR=${READY_LIB_DIR:-"$(dirname $BASH_SOURCE)/../lib/ready"}
 
-RC_FILE="${PWD}/.readyrc"
+declare RC_FILE="${PWD}/.readyrc"
 if [[ "$#" = "1" ]]; then
     RC_FILE="${PWD}/$1"
 fi
+declare -r RC_FILE
 
 # Import functions
 source "$READY_LIB_DIR/ready_lib.sh"
 
+if [[ ! -f "$RC_FILE" ]]; then
+    log_error "File not found: $RC_FILE"
+    exit 1
+fi
+
 # Execute RC_FILE
 log_debug "Execute: $RC_FILE"
-bash "$RC_FILE"
+source "$RC_FILE"

@@ -10,4 +10,3 @@ check_command() {
         return 1
     fi
 }
-export -f check_command

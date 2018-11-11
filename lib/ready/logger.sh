@@ -4,7 +4,7 @@
 # 1: INFO
 # 2: WARN
 # 3: ERROR
-READY_LOG_LEVEL=${READY_LOG_LEVEL:-1}
+declare -r READY_LOG_LEVEL=${READY_LOG_LEVEL:-1}
 
 log_debug() {
     if (( $READY_LOG_LEVEL <= 0 )); then

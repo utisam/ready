@@ -10,4 +10,3 @@ check_npm_package() {
         return 1
     fi
 }
-export -f check_npm_package

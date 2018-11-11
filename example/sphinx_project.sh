@@ -5,5 +5,5 @@
 
 check_command "make"
 check_command "python3"
-check_command "pip3"
-check_pip3_package "Sphinx"
+check_pip_command
+check_pip_package "Sphinx"
