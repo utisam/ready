@@ -17,7 +17,7 @@ cd ready
 sudo ./install.sh
 ```
 
-## Configur in Your Project
+## Configurate in Your Project
 
 Write `.readyrc` in your repository.
 
