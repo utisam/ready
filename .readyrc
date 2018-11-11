@@ -1,0 +1,5 @@
+#!/bin/bash
+
+check_command "cat"
+check_npm_package "errno"
+check_npm_package "less"

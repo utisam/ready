@@ -1,0 +1,15 @@
+#!/bin/bash
+
+READY_LIB_DIR=${READY_LIB_DIR:-$(dirname $BASH_SOURCE)/lib}
+
+RC_FILE="${PWD}/.readyrc"
+if [[ "$#" = "1" ]]; then
+    RC_FILE="${PWD}/$1"
+fi
+
+# Import functions
+source "$READY_LIB_DIR/ready_lib.sh"
+
+# Execute RC_FILE
+log_debug "Execute $RC_FILE"
+source "$RC_FILE"
