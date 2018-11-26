@@ -2,8 +2,9 @@
 
 Tool to check if you are ready.
 
-```
-$ git clone repository/which/has/.readyrc/file
+```console
+$ git clone repository/which/has/.readyrc/file.git
+$ cd $(basename -s .git !:2)
 $ ready
 Command: dep ... OK
 Command: migrate ... OK
