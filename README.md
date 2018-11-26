@@ -15,7 +15,8 @@ Command: migrate ... OK
 ```bash
 git clone git@github.com:utisam/ready.git
 cd ready
-sudo ./install.sh
+sudo ./install.sh # Linux
+GROUP=admin ./install.sh # OS X
 ```
 
 ## Configure Your Project
