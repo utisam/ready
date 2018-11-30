@@ -1,4 +1,6 @@
 #!/bin/bash
+[ -n "$__READY_CHECK_NODE_SH" ] && return || readonly __READY_CHECK_NODE_SH=1
+source $(dirname $BASH_SOURCE)/output.sh
 
 declare -r READY_NPM_LS_CACHE="$READY_TEMP_DIR/npm-ls.txt"
 

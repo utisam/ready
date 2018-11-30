@@ -1,4 +1,4 @@
-#!/bin/bash -u
+#!/bin/bash
 
 declare READY_RESULT=0
 declare -r READY_TEMP_DIR=$(mktemp --tmpdir -d ready.XXXXXXXXXX)
@@ -7,15 +7,9 @@ declare -r READY_TEMP_DIR=$(mktemp --tmpdir -d ready.XXXXXXXXXX)
 
 declare -r READY_LIB_DIR=${READY_LIB_DIR:-"$(dirname $BASH_SOURCE)/../lib/ready"}
 
-source "$READY_LIB_DIR/logger.sh"
-source "$READY_LIB_DIR/output.sh"
-
-source "$READY_LIB_DIR/check_command.sh"
-
-source "$READY_LIB_DIR/check_eval.sh"
-source "$READY_LIB_DIR/check_node.sh"
-source "$READY_LIB_DIR/check_python.sh"
-source "$READY_LIB_DIR/check_ruby.sh"
+for S in "$READY_LIB_DIR"/*.sh; do
+    source "$S"
+done
 
 # Execute READYRC_FILE
 

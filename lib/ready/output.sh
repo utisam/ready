@@ -1,4 +1,5 @@
 #!/bin/bash
+[ -n "$__READY_OUTPUT_SH" ] && return || readonly __READY_OUTPUT_SH=1
 
 out_title () {
     echo -n "$* ... "

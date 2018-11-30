@@ -1,4 +1,5 @@
 #!/bin/bash
+[ -n "$__READY_LOGGER_SH" ] && return || readonly __READY_LOGGER_SH=1
 
 # 0: DEBUG
 # 1: INFO
