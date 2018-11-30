@@ -4,7 +4,7 @@ declare READY_PIP_COMMAND=${READY_PIP_COMMAND:-pip3}
 declare -r READY_PIP_FREEZE_CACHE="$READY_TEMP_DIR/pip-freeze.txt"
 
 check_pip_command() {
-    check_command $READY_PIP_COMMAND
+    check_command "$READY_PIP_COMMAND"
 }
 
 _build_pip_freeze_cache() {

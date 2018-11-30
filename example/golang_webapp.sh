@@ -10,3 +10,5 @@ check_command "migrate"
 check_command "mockgen"
 
 check_command "mysql"
+
+check_eval '[[ "$(git config url.git@github.com:.insteadOf)" = "https://github.com/" ]]'
