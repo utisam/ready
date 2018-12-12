@@ -1,5 +1,5 @@
 #!/bin/bash
-[ -n "$__READY_CHECK_RUBY_SH" ] && return || readonly __READY_CHECK_RUBY_SH=1
+[[ -n "$__READY_CHECK_RUBY_SH" ]] && return || readonly __READY_CHECK_RUBY_SH=1
 source $(dirname $BASH_SOURCE)/output.sh
 
 declare -r READY_GEM_LIST_CACHE="$READY_TEMP_DIR/gem-list.txt"
