@@ -1,6 +1,6 @@
 # Ready
 
-Tool to check if you are ready.
+Tool to check whether you are ready.
 
 ```console
 $ git clone repository/which/has/.readyrc/file.git
