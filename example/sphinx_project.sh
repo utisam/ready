@@ -1,6 +1,6 @@
 #!/usr/local/bin/ready
 
-# This script is for "ready" to check if you are ready for development.
+# This file is a script to check whether you are ready for development.
 # Please install https://github.com/utisam/ready
 
 check_command "make"
