@@ -52,3 +52,5 @@ In this file, some special functions are avaiable.
 * `check_ruby_gem`
   * Check whether the ruby gem is installed.
   * Example: `check_ruby_gem "bundler"`
+* `check_wildcard_localhost`
+  * Check whether the `*.localhost` is resolved to `127.0.0.1`
