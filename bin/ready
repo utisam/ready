@@ -1,7 +1,7 @@
 #!/bin/bash
 
 declare READY_RESULT=0
-declare -r READY_TEMP_DIR=$(mktemp --tmpdir -d ready.XXXXXXXXXX)
+declare -r READY_TEMP_DIR=$(mktemp -d "${TMPDIR:-'/tmp'}/ready.XXXXXXXXXX")
 
 # Import functions
 
