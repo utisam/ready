@@ -4,8 +4,8 @@ source $(dirname $BASH_SOURCE)/output.sh
 
 check_wildcard_localhost() {
     out_title "*.localhost=127.0.0.1"
-    addr=$(dig +noall +answer '*.localhost' | awk '{print $(NF)}')
-    if [[ "$ip"="127.0.0.1" ]]; then
+    local addr=$(dig +noall +answer '*.localhost' | awk '{print $(NF)}')
+    if [[ "$addr"="127.0.0.1" ]]; then
         out_ok
         return 0
     else
